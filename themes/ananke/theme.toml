@@ -1,0 +1,4 @@
+name = "Ananke (profile bundle)"
+license = "MIT"
+description = "Minimal bundled theme for Srikanth Baride site"
+min_version = "0.68.0"
