@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome on Dr. Srikanth Baride</title>
+    <link>https://srikanthbaride.github.io/</link>
+    <description>Recent content in Welcome on Dr. Srikanth Baride</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://srikanthbaride.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://srikanthbaride.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://srikanthbaride.github.io/about/</guid>
+      <description>&lt;p&gt;I am a &lt;strong&gt;Postdoctoral Researcher&lt;/strong&gt; in Computer Science at the &lt;strong&gt;University of South Dakota&lt;/strong&gt;, specializing in &lt;strong&gt;Artificial Intelligence, Machine Learning, and Applied Reinforcement Learning&lt;/strong&gt;. My PhD at &lt;strong&gt;IIIT‑Delhi&lt;/strong&gt; developed &lt;strong&gt;scalable algorithms for spatial colocation pattern mining&lt;/strong&gt;, bridging data mining with GIS.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Interests&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Model‑based / world‑model RL, exploration efficiency&lt;/li&gt;&#xA;&lt;li&gt;Spatial &amp;amp; graph data mining; high‑utility pattern mining&lt;/li&gt;&#xA;&lt;li&gt;Applied AI for healthcare &amp;amp; industry&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Experience (highlights)&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Postdoctoral Researcher, USD AI Research Lab&lt;/strong&gt; — research leadership, publications, grant writing, mentoring.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Visiting Assistant Professor, USD&lt;/strong&gt; — designed &amp;amp; taught graduate AI/RL; advised student research.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Digital Innovation Engineer – Data Science, Buckman&lt;/strong&gt; — AI for process optimization &amp;amp; document automation with Python/Spark/Azure.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Infosys&lt;/strong&gt; — systems engineering for large‑scale production environments.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Skills&lt;/strong&gt;&lt;br&gt;&#xA;Python • C++ • SQL • Spark • Azure • Research supervision • Industry–academia collaboration&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://srikanthbaride.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://srikanthbaride.github.io/contact/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:srikanth.baride@usd.edu&#34;&gt;srikanth.baride@usd.edu&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://www.linkedin.com/in/srikanth-baride/&#34;&gt;https://www.linkedin.com/in/srikanth-baride/&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/srikanthbaride&#34;&gt;https://github.com/srikanthbaride&lt;/a&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Prefer email for collaborations and student supervision inquiries.&lt;/p&gt;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>https://srikanthbaride.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://srikanthbaride.github.io/projects/</guid>
+      <description>&lt;h3 id=&#34;crossmodal-world-models-for-sampleefficient-rl&#34;&gt;Cross‑Modal World Models for Sample‑Efficient RL&lt;/h3&gt;&#xA;&lt;p&gt;Designing compact predictive models that reduce environment interaction while maintaining performance.&lt;/p&gt;&#xA;&lt;h3 id=&#34;clinical-text-mining-for-cancer-care&#34;&gt;Clinical Text Mining for Cancer Care&lt;/h3&gt;&#xA;&lt;p&gt;Supervising student teams applying NLP and pattern mining to extract actionable insights from clinical notes.&lt;/p&gt;&#xA;&lt;h3 id=&#34;industrial-ai--buckman&#34;&gt;Industrial AI @ Buckman&lt;/h3&gt;&#xA;&lt;p&gt;Built AI‑driven process optimization and document automation with &lt;strong&gt;Python, Spark, and Azure&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>https://srikanthbaride.github.io/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://srikanthbaride.github.io/publications/</guid>
+      <description>&lt;p&gt;This list is &lt;strong&gt;auto-generated from BibTeX&lt;/strong&gt; (&lt;code&gt;static/pubs.bib&lt;/code&gt;).&lt;br&gt;&#xA;Update that file, then run the build script.&lt;/p&gt;&#xA;&#xA;&#xA;&lt;ul&gt;&#xA;  &#xA;    &lt;li&gt;&lt;b&gt;&lt;/b&gt;.&lt;/li&gt;&#xA;  &#xA;    &lt;li&gt;&lt;b&gt;&lt;/b&gt;.&lt;/li&gt;&#xA;  &#xA;    &lt;li&gt;&lt;b&gt;&lt;/b&gt;.&lt;/li&gt;&#xA;  &#xA;    &lt;li&gt;&lt;b&gt;&lt;/b&gt;.&lt;/li&gt;&#xA;  &#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Teaching</title>
+      <link>https://srikanthbaride.github.io/teaching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://srikanthbaride.github.io/teaching/</guid>
+      <description>&lt;p&gt;I have designed and taught graduate‑level courses, and mentored theses/capstones in:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Applied Reinforcement Learning&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Machine Learning&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Data Mining&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Distributed Systems&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

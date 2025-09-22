@@ -1,0 +1,17 @@
+{{ $pubs := .Site.Data.pubs }}
+{{ if not $pubs }}
+<p><em>No publications found. Make sure data/pubs.yaml exists by running the build script.</em></p>
+{{ else }}
+<ul>
+  {{ range $pubs }}
+    <li>
+      {{- with .author -}}{{ . }}. {{- end -}}
+      <b>{{ .title }}</b>.
+      {{- if .journal }} <i>{{ .journal }}</i>{{ end -}}
+      {{- if .booktitle }} <i>{{ .booktitle }}</i>{{ end -}}
+      {{- if .year }} {{ .year }}{{ end -}}
+      {{- if .pdf }} · <a href="{{ .pdf }}">PDF</a>{{ end -}}
+    </li>
+  {{ end }}
+</ul>
+{{ end }}
