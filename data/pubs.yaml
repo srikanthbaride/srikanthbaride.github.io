@@ -1,32 +1,33 @@
 - type: article
   key: baride2023colocation
-  author: ''
-  title: ''
-  journal: ''
+  author: Srikanth Baride and Others
+  title: Efficiently Mining Colocation Patterns for Range Query
+  journal: Big Data Research
   booktitle: ''
-  year: ''
+  year: '2023'
   pdf: ''
 - type: inproceedings
   key: baride2022hipc
-  author: ''
-  title: ''
+  author: Srikanth Baride and Others
+  title: Distributed Algorithm for High-Utility Subgraph Pattern Mining Over Big Data
+    Platforms
   journal: ''
-  booktitle: ''
-  year: ''
+  booktitle: IEEE HiPC
+  year: '2022'
   pdf: ''
 - type: article
   key: baride2021trajectory
-  author: ''
-  title: ''
+  author: Srikanth Baride and Others
+  title: A density-based algorithm for detecting anomalous trajectories
   journal: ''
   booktitle: ''
-  year: ''
+  year: '2021'
   pdf: ''
 - type: article
   key: baride2020mobile
-  author: ''
-  title: ''
+  author: Srikanth Baride and Others
+  title: A cloud-based software testing paradigm for mobile applications
   journal: ''
   booktitle: ''
-  year: ''
+  year: '2020'
   pdf: ''
