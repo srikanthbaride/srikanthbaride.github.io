@@ -19,7 +19,7 @@ lang: en
 icon: /uploads/favicon.png   # ← put your generated logo here
 
 url: "https://srikanthbaride.github.io"
-baseurl: ""   # <- must be empty
+baseurl: ""
 timezone: "America/Chicago"
 last_updated: true
 back_to_top: true
