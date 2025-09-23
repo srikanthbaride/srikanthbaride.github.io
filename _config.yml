@@ -16,7 +16,7 @@ footer_text: >
   Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: reinforcement learning, embodied AI, data mining, srikanth baride
 lang: en
-icon: /assets/img/favicon.png   # ← put your generated logo here
+icon: /uploads/favicon.png   # ← put your generated logo here
 
 url: "https://srikanthbaride.github.io"  # your website base URL
 baseurl: ""                             # leave blank if deploying at root
