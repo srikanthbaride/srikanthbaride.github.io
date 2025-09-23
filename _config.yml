@@ -18,8 +18,8 @@ keywords: reinforcement learning, embodied AI, data mining, srikanth baride
 lang: en
 icon: /uploads/favicon.png   # ← put your generated logo here
 
-url: "https://srikanthbaride.github.io"  # your website base URL
-baseurl: ""                             # leave blank if deploying at root
+url: "https://srikanthbaride.github.io"
+baseurl: ""   # <- must be empty
 timezone: "America/Chicago"
 last_updated: true
 back_to_top: true
