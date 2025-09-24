@@ -1,0 +1,22 @@
+
+:root{--accent:#4f46e5;}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;line-height:1.6;margin:0;color:#111}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:980px;margin:0 auto;padding:0 16px}
+.nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:10}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:56px}
+.hero{padding:56px 0 24px}
+.tagline{color:#555}
+.btn{display:inline-block;border:1px solid var(--accent);padding:10px 14px;border-radius:10px}
+.btn.primary{background:var(--accent);color:#fff}
+.grid{display:grid;gap:16px}
+.grid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{border:1px solid #eee;border-radius:14px;padding:18px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,0.03)}
+.footer{border-top:1px solid #eee;margin-top:48px;padding:16px 0;color:#666;font-size:14px}
+code{kbd,code,pre} pre{background:#f6f8fa;border-radius:8px;padding:12px;overflow:auto}
+.badge{display:inline-block;background:#eef2ff;color:#3730a3;padding:3px 8px;border-radius:999px;font-size:12px;margin-left:8px}
+.avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:2px solid #eee}
+.section-title{margin:24px 0 8px}
+.small{font-size:14px;color:#666}
