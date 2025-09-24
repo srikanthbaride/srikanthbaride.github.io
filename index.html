@@ -84,24 +84,28 @@
 <section id="publications">
   <h2 class="section-title">Publications</h2>
   <div class="card">
-    <p>Rendered from <code>static/pubs.bib</code>.</p>
-
-    <!-- Template used by bibtex-js -->
-    <div class="bibtex_template" style="display:none;">
-      <p>
-        <span class="if title"><b class="title"></b>. </span>
-        <span class="if author"><span class="author"></span>. </span>
-        <span class="if journal"><i class="journal"></i></span>
-        <span class="if booktitle"><i class="booktitle"></i></span>
-        <span class="if year">(<span class="year"></span>)</span>.
-      </p>
-    </div>
-
-    <!-- Container that will be filled -->
-    <div id="bibtex_display"></div>
-
-    <!-- Point bibtex-js to your file -->
-    <bibtex src="static/pubs.bib"></bibtex>
+    <ul>
+      <li>
+        <b>Efficiently Mining Colocation Patterns for Range Query</b><br>
+        Anuj S. Saxena, Vikram Goyal, <b>Srikanth Baride</b><br>
+        <i>Big Data Research</i>, Vol. 31, 100369 (2023)
+      </li>
+      <li>
+        <b>Distributed Algorithm for High-Utility Subgraph Pattern Mining Over Big Data Platforms</b><br>
+        Alind Khare, Vikram Goyal, <b>Srikanth Baride</b>, Sushil K. Prasad, Michael McDermott, Dhara Shah<br>
+        <i>IEEE International Conference on High Performance Computing (HiPC)</i>, pp. 263–272 (2017)
+      </li>
+      <li>
+        <b>A Density-Based Algorithm for Detecting Anomalous Trajectories</b><br>
+        Rakesh P. Barnwal, <b>Srikanth Baride</b>, Subhadip Majumder, S. K. Ghosh<br>
+        <i>MicroCom</i> (2016)
+      </li>
+      <li>
+        <b>A Cloud-Based Software Testing Paradigm for Mobile Applications</b><br>
+        <b>Srikanth Baride</b>, Kamlesh Dutta<br>
+        <i>ACM SIGSOFT Software Engineering Notes</i>, Vol. 36, No. 3, pp. 1–4 (2011)
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -163,12 +167,6 @@ concepts, students will delve into advanced algorithms for pattern mining.</p>
     </section>
   </main>
 
-<script src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    try { bibtex_js_draw(); } catch (e) { console.error(e); }
-  });
-</script>
 
 </body>
 
