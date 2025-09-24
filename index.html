@@ -15,6 +15,15 @@
     gtag('config', 'G-XXXXXXXXXXXX');
   </script>
 </head>
+
+  <script>
+  // Force bibtex-js to draw once the script has loaded
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.bibtex_js_draw) { try { bibtex_js_draw(); } catch(e){} }
+  });
+</script>
+
+  
 <body>
   <nav class="nav">
     <div class="container nav-inner">
@@ -72,25 +81,39 @@
       </div>
     </section>
 
-    <section id="publications">
-      <h2 class="section-title">Publications</h2>
-      <div class="card">
-        <p>Publications below are rendered from <code>static/pubs.bib</code> (prefilled). To update, export BibTeX from Google Scholar and replace this file.</p>
-        <div class="small">Powered by <a href="https://github.com/pcooksey/bibtex-js" target="_blank" rel="noopener">bibtex-js</a>.</div>
-        <div id="pubs">
-          <div class="bibtex_template" style="display:none;">
-            <p>
-              <span class="if title"><b class="title"></b>. </span>
-              <span class="if author"><span class="author"></span>. </span>
-              <span class="if journal"><i class="journal"></i></span>
-              <span class="if booktitle"><i class="booktitle"></i></span>
-              <span class="if year">(<span class="year"></span>)</span>.
-            </p>
-          </div>
-          <bibtex src="static/pubs.bib"></bibtex>
-        </div>
-      </div>
-    </section>
+<section id="publications">
+  <h2 class="section-title">Publications</h2>
+  <div class="card">
+    <p>Publications below are rendered from <code>static/pubs.bib</code>.</p>
+    <div class="small">Powered by
+      <a href="https://github.com/pcooksey/bibtex-js" target="_blank" rel="noopener">bibtex-js</a>.
+    </div>
+
+    <!-- Template used by bibtex-js -->
+    <div class="bibtex_template" style="display:none;">
+      <p>
+        <span class="if title"><b class="title"></b>. </span>
+        <span class="if author"><span class="author"></span>. </span>
+        <span class="if journal"><i class="journal"></i></span>
+        <span class="if booktitle"><i class="booktitle"></i></span>
+        <span class="if year">(<span class="year"></span>)</span>.
+      </p>
+    </div>
+
+    <!-- This is what gets rendered -->
+    <div id="pubs"></div>
+    <bibtex src="static/pubs.bib"></bibtex>
+  </div>
+</section>
+
+<!-- keep this at the end of <body> -->
+<script src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.bibtex_js_draw) { try { bibtex_js_draw(); } catch(e){} }
+  });
+</script>
+
 
     <section id="projects">
       <h2 class="section-title">Projects & GitHub Portfolio</h2>
