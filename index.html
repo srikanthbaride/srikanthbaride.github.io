@@ -78,7 +78,6 @@
   <div class="card">
     <p>Rendered from <code>static/pubs.bib</code>.</p>
 
-    <!-- Template used by bibtex-js -->
     <div class="bibtex_template" style="display:none;">
       <p>
         <span class="if title"><b class="title"></b>. </span>
@@ -89,13 +88,18 @@
       </p>
     </div>
 
-    <!-- Container bibtex-js will fill -->
     <div id="bibtex_display"></div>
-
-    <!-- Point bibtex-js to your file -->
     <bibtex src="static/pubs.bib"></bibtex>
   </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    try { bibtex_js_draw(); } catch(e) { console.error(e); }
+  });
+</script>
+
 
 
 
