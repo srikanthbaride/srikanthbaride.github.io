@@ -77,9 +77,27 @@
   <h2 class="section-title">Publications</h2>
   <div class="card">
     <p>Rendered from <code>static/pubs.bib</code>.</p>
-    <div id="pubs"></div>
+
+    <!-- Template used by bibtex-js -->
+    <div class="bibtex_template" style="display:none;">
+      <p>
+        <span class="if title"><b class="title"></b>. </span>
+        <span class="if author"><span class="author"></span>. </span>
+        <span class="if journal"><i class="journal"></i></span>
+        <span class="if booktitle"><i class="booktitle"></i></span>
+        <span class="if year">(<span class="year"></span>)</span>.
+      </p>
+    </div>
+
+    <!-- Container bibtex-js will fill -->
+    <div id="bibtex_display"></div>
+
+    <!-- Point bibtex-js to your file -->
+    <bibtex src="static/pubs.bib"></bibtex>
   </div>
 </section>
+
+
 
     <section id="projects">
       <h2 class="section-title">Projects & GitHub Portfolio</h2>
@@ -141,12 +159,13 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
   <script src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
-</body>
-  <script src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
+  <!-- Put these TWO lines ONCE, near the end of <body> (before </body>) -->
+<script src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    try { bibtexify("static/pubs.bib", "pubs"); } catch(e) { console.error(e); }
+  document.addEventListener('DOMContentLoaded', function () {
+    try { bibtex_js_draw(); } catch (e) { console.error(e); }
   });
 </script>
+</body>
 
 </html>
