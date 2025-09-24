@@ -20,8 +20,6 @@ code{kbd,code,pre} pre{background:#f6f8fa;border-radius:8px;padding:12px;overflo
 .avatar {
   width: 190px;
   height: 190px;
-  object-fit: cover;
-  border: 2px solid #eee;
 }
 
 .section-title{margin:24px 0 8px}
