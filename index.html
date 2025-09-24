@@ -86,6 +86,7 @@
   <div class="card">
     <p>Rendered from <code>static/pubs.bib</code>.</p>
 
+    <!-- Template used by bibtex-js -->
     <div class="bibtex_template" style="display:none;">
       <p>
         <span class="if title"><b class="title"></b>. </span>
@@ -96,17 +97,14 @@
       </p>
     </div>
 
+    <!-- Container that will be filled -->
     <div id="bibtex_display"></div>
+
+    <!-- Point bibtex-js to your file -->
     <bibtex src="static/pubs.bib"></bibtex>
   </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    try { bibtex_js_draw(); } catch(e) { console.error(e); }
-  });
-</script>
 
 
 
@@ -165,17 +163,13 @@ concepts, students will delve into advanced algorithms for pattern mining.</p>
     </section>
   </main>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-  <script src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
-  <!-- Put these TWO lines ONCE, near the end of <body> (before </body>) -->
 <script src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     try { bibtex_js_draw(); } catch (e) { console.error(e); }
   });
 </script>
+
 </body>
 
 </html>
