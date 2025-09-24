@@ -18,8 +18,8 @@ a:hover{text-decoration:underline}
 code{kbd,code,pre} pre{background:#f6f8fa;border-radius:8px;padding:12px;overflow:auto}
 .badge{display:inline-block;background:#eef2ff;color:#3730a3;padding:3px 8px;border-radius:999px;font-size:12px;margin-left:8px}
 .avatar {
-  width: 210px;
-  height: 210px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;   /* keeps it circular, remove if you want a square */
   object-fit: cover;    /* ensures it fills the box */
   border: none;         /* no border */
