@@ -89,24 +89,6 @@
   </div>
 </section>
 
-<!-- keep this at the bottom of the <body> -->
-<script src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    try { bibtexify("static/pubs.bib", "pubs"); } catch(e) { console.error(e); }
-  });
-</script>
-
-
-<!-- keep this at the end of <body> -->
-<script src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    if (window.bibtex_js_draw) { try { bibtex_js_draw(); } catch(e){} }
-  });
-</script>
-
-
     <section id="projects">
       <h2 class="section-title">Projects & GitHub Portfolio</h2>
       <div class="grid cols-2">
@@ -168,4 +150,11 @@
   </script>
   <script src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
 </body>
+  <script src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    try { bibtexify("static/pubs.bib", "pubs"); } catch(e) { console.error(e); }
+  });
+</script>
+
 </html>
