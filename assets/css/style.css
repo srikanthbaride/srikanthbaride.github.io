@@ -18,9 +18,8 @@ a:hover{text-decoration:underline}
 code{kbd,code,pre} pre{background:#f6f8fa;border-radius:8px;padding:12px;overflow:auto}
 .badge{display:inline-block;background:#eef2ff;color:#3730a3;padding:3px 8px;border-radius:999px;font-size:12px;margin-left:8px}
 .avatar {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
+  width: 190px;
+  height: 190px;
   object-fit: cover;
   border: 2px solid #eee;
 }
