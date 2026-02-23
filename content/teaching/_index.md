@@ -26,3 +26,13 @@ Over the years I have taught and assisted with a variety of courses at the gradu
 - **ENG599s Research Methods** (Graduate) — Winter 2019
 - **CSE231 Operating Systems** (Undergraduate) — Winter 2020
 - **CSE600A Object Oriented Programming and Design** (Graduate) — Monsoon 2020
+
+## Faculty Training & Professional Development
+
+- Online Faculty Community — Faculty Orientation (USD)
+- Digital Accessibility Training (USD)
+
+
+## Additional Resources
+
+- 📘 Other Teaching Assignments and TA Roles are included on this Teaching page.
