@@ -35,5 +35,4 @@ Over the years I have taught and assisted with a variety of courses at the gradu
 
 ## Additional Resources
 
-- 📁 [Teaching Archive](/teaching/archive/)
-- 📘 Other Teaching Assignments and TA Roles are listed on the archive page.
+- 📘 Other Teaching Assignments and TA Roles are included on this Teaching page.
