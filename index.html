@@ -179,10 +179,8 @@ a,button{transition:color var(--tx),background var(--tx),box-shadow var(--tx),bo
   .nav-role{display:none}
 }
 
-/* AVATAR */
-.hero-avatar-wrap{margin-bottom:var(--sp6)}
-.hero-avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;object-position:top center;border:3px solid var(--color-primary-highlight);box-shadow:0 0 0 6px color-mix(in oklch,var(--color-primary) 10%,transparent),var(--sh-md)}
-@media(min-width:768px){.hero-avatar{width:140px;height:140px}}
+.hero-avatar-wrap{margin-bottom:var(--sp5);opacity:1!important;animation:none!important}.hero-avatar{width:130px;height:130px;border-radius:50%;object-fit:cover;object-position:top center;border:3px solid var(--color-primary);box-shadow:0 0 0 5px color-mix(in oklch,var(--color-primary) 15%,transparent),var(--sh-md);display:block}
+@media(min-width:768px){.hero-avatar{width:150px;height:150px}}
 
 </style>
 </head>
@@ -233,7 +231,7 @@ a,button{transition:color var(--tx),background var(--tx),box-shadow var(--tx),bo
     <h1 class="hero-name">Dr. <em>Srikanth</em> Baride</h1>
     <p class="hero-title">Postdoctoral Researcher, University of South Dakota</p>
     <p class="hero-bio">I build evaluation frameworks that make AI systems more transparent and accountable &mdash; from carbon-aware ML benchmarks to LLM billing analysis and retrieval-augmented reasoning agents. Ph.D. in Computer Science from IIIT-Delhi (2024).</p>
-    <div class="hero-avatar-wrap fi">
+    <div class="hero-avatar-wrap">
       <img src="avatar.jpg" alt="Dr. Srikanth Baride" width="160" height="160" loading="eager" class="hero-avatar">
     </div>
     <div class="hero-chips">
