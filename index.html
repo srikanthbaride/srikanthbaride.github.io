@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Srikanth Baride — AI Researcher, Educator &amp; Author</title>
+<meta name="description" content="Srikanth Baride — Postdoctoral Researcher at USD. Projects, teaching, and publications in AI, Reinforcement Learning, and Sustainable AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300..700&display=swap" rel="stylesheet">
+<style>
+:root,[data-theme="light"]{--color-bg:#f7f6f2;--color-surface:#f9f8f5;--color-surface-2:#fbfbf9;--color-surface-offset:#f3f0ec;--color-surface-dynamic:#e6e4df;--color-divider:#dcd9d5;--color-border:#d4d1ca;--color-text:#28251d;--color-text-muted:#7a7974;--color-text-faint:#bab9b4;--color-text-inverse:#f9f8f4;--color-primary:#01696f;--color-primary-hover:#0c4e54;--color-primary-highlight:#cedcd8;--color-blue:#006494;--color-blue-highlight:#c6d8e4;--color-purple:#7a39bb;--color-purple-highlight:#dacfde;--color-warning:#964219;--color-warning-highlight:#ddcfc6;--color-success:#437a22;--color-success-highlight:#d4dfcc;--radius-sm:0.375rem;--radius-md:0.5rem;--radius-lg:0.75rem;--radius-xl:1rem;--radius-full:9999px;--tx:180ms cubic-bezier(0.16,1,0.3,1);--sh-sm:0 1px 2px oklch(0.2 0.01 80/0.06);--sh-md:0 4px 12px oklch(0.2 0.01 80/0.08);--sh-lg:0 12px 32px oklch(0.2 0.01 80/0.12);--xs:clamp(0.75rem,.7rem + .25vw,.875rem);--sm:clamp(.875rem,.8rem + .35vw,1rem);--base:clamp(1rem,.95rem + .25vw,1.125rem);--lg:clamp(1.125rem,1rem + .75vw,1.5rem);--xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);--2xl:clamp(2rem,1.2rem + 2.5vw,3.5rem);--3xl:clamp(2.5rem,1rem + 4vw,5rem);--sp1:.25rem;--sp2:.5rem;--sp3:.75rem;--sp4:1rem;--sp5:1.25rem;--sp6:1.5rem;--sp8:2rem;--sp10:2.5rem;--sp12:3rem;--sp16:4rem;--sp20:5rem;--sp24:6rem;--fd:'Instrument Serif',Georgia,serif;--fb:'Inter',system-ui,sans-serif}
+[data-theme="dark"]{--color-bg:#0e0f0f;--color-surface:#141615;--color-surface-2:#191b1a;--color-surface-offset:#1d1f1e;--color-surface-dynamic:#252826;--color-divider:#232624;--color-border:#2e322f;--color-text:#d4d9d5;--color-text-muted:#7a8279;--color-text-faint:#4a504a;--color-text-inverse:#0e0f0f;--color-primary:#3fa89e;--color-primary-hover:#2b8f86;--color-primary-highlight:#1f3533;--color-blue:#5591c7;--color-blue-highlight:#172131;--color-purple:#a86fdf;--color-purple-highlight:#231530;--color-warning:#e08842;--color-warning-highlight:#2e1a0a;--color-success:#6daa45;--color-success-highlight:#1e3015;--sh-sm:0 1px 2px oklch(0 0 0/.3);--sh-md:0 4px 12px oklch(0 0 0/.4);--sh-lg:0 12px 32px oklch(0 0 0/.5)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{min-height:100dvh;font-family:var(--fb);font-size:var(--base);color:var(--color-text);background:var(--color-bg);line-height:1.6}
+img{display:block;max-width:100%;height:auto}
+ul{list-style:none}
+button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
+h1,h2,h3,h4{text-wrap:balance;line-height:1.2;font-family:var(--fd)}
+p,li{text-wrap:pretty}
+a,button{transition:color var(--tx),background var(--tx),box-shadow var(--tx),border-color var(--tx),opacity var(--tx)}
+::selection{background:oklch(from var(--color-primary) l c h/.2);color:var(--color-text)}
+:focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.wrap{max-width:1100px;margin-inline:auto;padding-inline:clamp(var(--sp4),4vw,var(--sp12))}
+.wrap--narrow{max-width:760px;margin-inline:auto;padding-inline:clamp(var(--sp4),4vw,var(--sp12))}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:color-mix(in oklch,var(--color-bg) 85%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--color-border);padding-block:var(--sp3)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--sp4)}
+.nav-logo{display:flex;align-items:center;gap:var(--sp3);text-decoration:none;color:var(--color-text)}
+.nav-name{font-family:var(--fd);font-size:var(--base);letter-spacing:-.01em}
+.nav-role{font-size:var(--xs);color:var(--color-text-muted)}
+.nav-links{display:flex;align-items:center;gap:var(--sp1)}
+.nav-link{font-size:var(--xs);font-weight:500;text-decoration:none;color:var(--color-text-muted);padding:var(--sp2) var(--sp3);border-radius:var(--radius-full)}
+.nav-link:hover{color:var(--color-text);background:var(--color-surface-offset)}
+.nav-right{display:flex;align-items:center;gap:var(--sp2)}
+.icon-btn{width:34px;height:34px;display:flex;align-items:center;justify-content:center;color:var(--color-text-muted);border:1px solid var(--color-border);border-radius:var(--radius-full)}
+.icon-btn:hover{color:var(--color-text);border-color:var(--color-text-muted)}
+@media(max-width:600px){.nav-links{display:none}}
+
+/* HERO */
+.hero{padding-block:clamp(var(--sp16),12vw,var(--sp24));position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% -5%,color-mix(in oklch,var(--color-primary) 13%,transparent),transparent);pointer-events:none}
+.hero-tag{display:inline-flex;align-items:center;gap:var(--sp2);font-size:var(--xs);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--color-primary);margin-bottom:var(--sp5)}
+.hero-dot{width:6px;height:6px;border-radius:50%;background:var(--color-primary)}
+.hero-name{font-size:var(--3xl);font-family:var(--fd);letter-spacing:-.025em;margin-bottom:var(--sp3);color:var(--color-text)}
+.hero-name em{font-style:italic;color:var(--color-primary)}
+.hero-title{font-size:var(--lg);font-family:var(--fb);font-weight:400;color:var(--color-text-muted);margin-bottom:var(--sp6);letter-spacing:-.01em}
+.hero-bio{font-size:var(--base);color:var(--color-text-muted);max-width:62ch;line-height:1.7;margin-bottom:var(--sp8)}
+.hero-chips{display:flex;flex-wrap:wrap;gap:var(--sp2);margin-bottom:var(--sp8)}
+.chip{display:inline-flex;align-items:center;gap:var(--sp2);font-size:var(--xs);font-weight:500;padding:var(--sp2) var(--sp3);border-radius:var(--radius-full);border:1px solid var(--color-border);color:var(--color-text-muted);background:var(--color-surface)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:var(--sp3)}
+.cta{display:inline-flex;align-items:center;gap:var(--sp2);font-size:var(--sm);font-weight:500;text-decoration:none;padding:var(--sp2) var(--sp5);border-radius:var(--radius-full);transition:all var(--tx)}
+.cta--primary{background:var(--color-primary);color:var(--color-text-inverse)}
+.cta--primary:hover{opacity:.88;transform:translateY(-1px);box-shadow:0 4px 16px color-mix(in oklch,var(--color-primary) 35%,transparent)}
+.cta--ghost{background:transparent;color:var(--color-text-muted);border:1px solid var(--color-border)}
+.cta--ghost:hover{color:var(--color-text);border-color:var(--color-text-muted)}
+
+/* SECTION SHARED */
+.sec{padding-block:clamp(var(--sp12),7vw,var(--sp20));border-top:1px solid var(--color-divider)}
+.sec-label{font-size:var(--xs);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:var(--sp3)}
+.sec-title{font-size:var(--xl);letter-spacing:-.02em;margin-bottom:clamp(var(--sp8),4vw,var(--sp12))}
+
+/* QUICK STATS */
+.stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:var(--sp4);margin-bottom:clamp(var(--sp10),5vw,var(--sp16))}
+.stat-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--sp5) var(--sp6)}
+.stat-val{font-size:var(--2xl);font-family:var(--fd);font-weight:700;color:var(--color-primary);letter-spacing:-.03em;line-height:1}
+.stat-lbl{font-size:var(--xs);color:var(--color-text-muted);margin-top:var(--sp2);font-weight:500;text-transform:uppercase;letter-spacing:.05em}
+
+/* PROJECTS */
+.proj-grid{display:grid;grid-template-columns:1fr;gap:var(--sp5)}
+@media(min-width:768px){.proj-grid{grid-template-columns:1fr 1fr}.proj--wide{grid-column:1/-1}}
+.proj{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--sp7);position:relative;overflow:hidden;transition:box-shadow var(--tx),border-color var(--tx),transform var(--tx)}
+.proj:hover{box-shadow:var(--sh-lg);border-color:color-mix(in oklch,var(--ca,var(--color-primary)) 40%,var(--color-border));transform:translateY(-2px)}
+.proj::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--ca,var(--color-primary)),transparent);opacity:0;transition:opacity var(--tx)}
+.proj:hover::after{opacity:1}
+.proj[data-c=teal]{--ca:var(--color-primary);--cahl:var(--color-primary-highlight)}
+.proj[data-c=blue]{--ca:var(--color-blue);--cahl:var(--color-blue-highlight)}
+.proj[data-c=purple]{--ca:var(--color-purple);--cahl:var(--color-purple-highlight)}
+.proj-head{display:flex;align-items:flex-start;justify-content:space-between;gap:var(--sp4);margin-bottom:var(--sp5)}
+.proj-icon{width:46px;height:46px;border-radius:var(--radius-lg);flex-shrink:0;display:flex;align-items:center;justify-content:center;background:var(--cahl);color:var(--ca)}
+.badges{display:flex;flex-wrap:wrap;gap:var(--sp2)}
+.badge{display:inline-flex;align-items:center;font-size:var(--xs);font-weight:500;padding:2px var(--sp3);border-radius:var(--radius-full);background:var(--cahl);color:var(--ca);border:1px solid color-mix(in oklch,var(--ca) 25%,transparent)}
+.badge--rx{background:color-mix(in oklch,#b31b1b 12%,var(--color-surface));color:#e05050;border-color:color-mix(in oklch,#e05050 22%,transparent)}
+.badge--pt{background:color-mix(in oklch,var(--color-warning) 10%,var(--color-surface));color:var(--color-warning);border-color:color-mix(in oklch,var(--color-warning) 22%,transparent)}
+.proj-name{font-size:var(--xl);letter-spacing:-.02em;margin-bottom:var(--sp2)}
+.proj-sub{font-size:var(--sm);font-weight:500;color:var(--ca);margin-bottom:var(--sp4)}
+.proj-desc{font-size:var(--sm);color:var(--color-text-muted);line-height:1.65;margin-bottom:var(--sp5)}
+.kf-label{font-size:var(--xs);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--color-text-faint);margin-bottom:var(--sp3)}
+.kf-list{display:flex;flex-direction:column;gap:var(--sp2);margin-bottom:var(--sp5)}
+.kf{display:flex;align-items:flex-start;gap:var(--sp3);font-size:var(--sm);color:var(--color-text-muted);line-height:1.5}
+.kf-dot{width:5px;height:5px;border-radius:50%;background:var(--ca);margin-top:.5em;flex-shrink:0;opacity:.7}
+.pills{display:flex;flex-wrap:wrap;gap:var(--sp2);margin-bottom:var(--sp5)}
+.pill{font-size:var(--xs);font-weight:500;padding:2px var(--sp3);border-radius:var(--radius-full);background:var(--color-surface-offset);color:var(--color-text-muted);border:1px solid var(--color-border)}
+.divider{height:1px;background:var(--color-divider);margin-bottom:var(--sp4)}
+.btn-row{display:flex;flex-wrap:wrap;gap:var(--sp3)}
+.btn{display:inline-flex;align-items:center;gap:var(--sp2);font-size:var(--sm);font-weight:500;text-decoration:none;padding:var(--sp2) var(--sp4);border-radius:var(--radius-full);transition:all var(--tx)}
+.btn--p{background:var(--ca);color:var(--color-text-inverse)}
+.btn--p:hover{opacity:.88;transform:translateY(-1px)}
+.btn--g{background:transparent;color:var(--color-text-muted);border:1px solid var(--color-border)}
+.btn--g:hover{color:var(--color-text);border-color:var(--color-text-muted)}
+.btn--rx{background:color-mix(in oklch,#b31b1b 14%,var(--color-surface-offset));color:#e05050;border:1px solid color-mix(in oklch,#e05050 20%,transparent)}
+.btn--rx:hover{background:color-mix(in oklch,#b31b1b 24%,var(--color-surface-offset))}
+
+/* WIDE PROJECT INNER GRID */
+.proj--wide .proj-inner{display:grid;gap:var(--sp8)}
+@media(min-width:900px){.proj--wide .proj-inner{grid-template-columns:1fr 1fr;align-items:start}}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp3)}
+.metric{background:var(--color-surface-offset);border-radius:var(--radius-lg);padding:var(--sp4);border:1px solid var(--color-border)}
+.metric-v{font-size:var(--xl);font-family:var(--fd);font-weight:700;color:var(--ca);letter-spacing:-.02em;margin-bottom:var(--sp1)}
+.metric-l{font-size:var(--xs);color:var(--color-text-muted);font-weight:500;text-transform:uppercase;letter-spacing:.05em}
+.setup-box{margin-top:var(--sp4);padding:var(--sp4);background:var(--color-surface-offset);border-radius:var(--radius-lg);border:1px solid var(--color-border)}
+
+/* PAPER CALLOUT */
+.paper-box{margin-top:clamp(var(--sp8),4vw,var(--sp12));padding:var(--sp8);background:color-mix(in oklch,var(--color-primary) 6%,var(--color-surface));border:1px solid color-mix(in oklch,var(--color-primary) 30%,var(--color-border));border-radius:var(--radius-xl)}
+.paper-label{font-size:var(--xs);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--color-primary);margin-bottom:var(--sp3);display:flex;align-items:center;gap:var(--sp2)}
+.paper-title{font-size:var(--lg);letter-spacing:-.01em;margin-bottom:var(--sp3)}
+.paper-authors{font-size:var(--sm);color:var(--color-text-muted);margin-bottom:var(--sp5)}
+
+/* ABOUT 2-COL */
+.about-grid{display:grid;gap:var(--sp5)}
+@media(min-width:768px){.about-grid{grid-template-columns:1fr 1fr}}
+.about-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--sp6)}
+.acard-label{font-size:var(--xs);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:var(--sp3)}
+.acard-title{font-size:var(--lg);margin-bottom:var(--sp3)}
+.acard-body{font-size:var(--sm);color:var(--color-text-muted);line-height:1.65}
+.ri-list{display:flex;flex-direction:column;gap:var(--sp2)}
+.ri{display:flex;align-items:flex-start;gap:var(--sp3);font-size:var(--sm);color:var(--color-text-muted)}
+.ri-dot{width:5px;height:5px;border-radius:50%;background:var(--color-primary);margin-top:.55em;flex-shrink:0}
+
+/* TEACHING */
+.teach-grid{display:grid;gap:var(--sp5)}
+@media(min-width:768px){.teach-grid{grid-template-columns:1fr 1fr}}
+.teach-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--sp6)}
+.teach-inst{display:flex;align-items:center;gap:var(--sp2);font-size:var(--xs);font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--color-primary);margin-bottom:var(--sp4)}
+.teach-role{font-size:var(--xs);font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--color-text-faint);margin-top:var(--sp5);margin-bottom:var(--sp3)}
+.course-list{display:flex;flex-direction:column}
+.course{display:flex;gap:var(--sp4);align-items:flex-start;padding:var(--sp3) 0;border-bottom:1px solid var(--color-divider)}
+.course:last-child{border-bottom:none}
+.c-code{font-size:var(--xs);font-weight:700;color:var(--color-primary);min-width:62px;padding-top:2px;letter-spacing:.03em}
+.c-name{font-size:var(--sm);font-weight:500;color:var(--color-text);margin-bottom:2px}
+.c-meta{font-size:var(--xs);color:var(--color-text-muted)}.c-desc{font-size:var(--xs);color:var(--color-text-faint);margin-top:var(--sp2);line-height:1.5;max-width:46ch}
+
+/* PUBLICATIONS */
+.pub-list{display:flex;flex-direction:column;gap:var(--sp3)}
+.pub{display:flex;gap:var(--sp5);align-items:flex-start;padding:var(--sp5);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);transition:box-shadow var(--tx),border-color var(--tx)}
+.pub:hover{box-shadow:var(--sh-md);border-color:color-mix(in oklch,var(--color-primary) 30%,var(--color-border))}
+.pub--book{border-color:color-mix(in oklch,var(--color-primary) 30%,var(--color-border));background:color-mix(in oklch,var(--color-primary) 4%,var(--color-surface))}
+.pub-type{font-size:var(--xs);font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--color-primary);min-width:68px;padding-top:2px}
+.pub-title{font-size:var(--sm);font-weight:600;color:var(--color-text);margin-bottom:2px;line-height:1.4}
+.pub-by{font-size:var(--xs);color:var(--color-text-muted);margin-bottom:2px}
+.pub-venue{font-size:var(--xs);color:var(--color-text-muted);margin-bottom:var(--sp2)}
+.pub-doi{font-size:var(--xs);font-weight:500;color:var(--color-primary);text-decoration:none}
+.pub-doi:hover{text-decoration:underline}
+
+/* SERVICE PILLS ROW */
+.service-row{display:flex;flex-wrap:wrap;gap:var(--sp2);margin-top:var(--sp4)}
+.s-pill{font-size:var(--xs);font-weight:500;padding:var(--sp2) var(--sp3);border-radius:var(--radius-full);background:var(--color-surface-offset);color:var(--color-text-muted);border:1px solid var(--color-border)}
+
+/* FOOTER */
+.foot{border-top:1px solid var(--color-divider);padding-block:var(--sp8);font-size:var(--sm);color:var(--color-text-muted)}
+.foot-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--sp4)}
+.foot-links{display:flex;align-items:center;gap:var(--sp4)}
+.foot-a{text-decoration:none;color:var(--color-text-muted)}
+.foot-a:hover{color:var(--color-text)}
+
+/* SCROLL REVEAL */
+@supports(animation-timeline:scroll()){.fi{opacity:0;animation:rfade linear both;animation-timeline:view();animation-range:entry 0% entry 75%}}
+@keyframes rfade{to{opacity:1}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+@media(max-width:640px){
+  .hero-name{font-size:clamp(2.2rem,9vw,3.2rem)}
+  .proj-head{flex-direction:column}
+  .pub{flex-direction:column;gap:var(--sp2)}
+  .pub-type{min-width:auto}
+  .nav-role{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Srikanth Baride home">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+          <rect width="30" height="30" rx="7" fill="var(--color-primary)"/>
+          <path d="M6 8h6.5l4.5 7-4.5 7H6l4.5-7L6 8z" fill="white" opacity=".9"/>
+          <path d="M16 8h8l-4.5 7 4.5 7h-8l4.5-7L16 8z" fill="white" opacity=".35"/>
+        </svg>
+        <div>
+          <div class="nav-name">Srikanth Baride</div>
+          <div class="nav-role">Postdoctoral Researcher &middot; USD</div>
+        </div>
+      </a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#teaching" class="nav-link">Teaching</a>
+        <a href="#publications" class="nav-link">Publications</a>
+      </nav>
+      <div class="nav-right">
+        <a href="mailto:srikanth.baride@usd.edu" class="icon-btn" aria-label="Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="https://github.com/USD-AI-ResearchLab" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        </a>
+        <button class="icon-btn" data-theme-toggle aria-label="Toggle theme">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap--narrow">
+    <div class="hero-tag"><span class="hero-dot" aria-hidden="true"></span>AI Researcher &middot; Educator &middot; Author</div>
+    <h1 class="hero-name">Dr. <em>Srikanth</em> Baride</h1>
+    <p class="hero-title">Postdoctoral Researcher, University of South Dakota</p>
+    <p class="hero-bio">I build evaluation frameworks that make AI systems more transparent and accountable &mdash; from carbon-aware ML benchmarks to LLM billing analysis and retrieval-augmented reasoning agents. Ph.D. in Computer Science from IIIT-Delhi (2024).</p>
+    <div class="hero-chips">
+      <span class="chip"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Vermillion, SD</span>
+      <span class="chip">Ph.D. IIIT-Delhi &rsquo;24</span>
+      <span class="chip">CRC Press Book Author</span>
+      <span class="chip">IEEE CAI 2026</span>
+      <span class="chip">Visvesvaraya Fellow</span>
+    </div>
+    <div class="hero-ctas">
+      <a href="mailto:srikanth.baride@usd.edu" class="cta cta--primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Get in Touch
+      </a>
+      <a href="https://github.com/USD-AI-ResearchLab" target="_blank" rel="noopener noreferrer" class="cta cta--ghost">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        GitHub
+      </a>
+      <a href="https://arxiv.org/abs/2602.16042" target="_blank" rel="noopener noreferrer" class="cta cta--ghost">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        arXiv Paper
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section style="padding-block:var(--sp10);border-top:1px solid var(--color-divider)">
+  <div class="wrap">
+    <div class="stats-row fi">
+      <div class="stat-card"><div class="stat-val">5+</div><div class="stat-lbl">Peer-Reviewed Publications</div></div>
+      <div class="stat-card"><div class="stat-val">10+</div><div class="stat-lbl">Courses Taught</div></div>
+      <div class="stat-card"><div class="stat-val">3</div><div class="stat-lbl">Active Research Projects</div></div>
+      <div class="stat-card"><div class="stat-val">1</div><div class="stat-lbl">CRC Press Book</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="sec" id="projects">
+  <div class="wrap">
+    <p class="sec-label">Research Projects</p>
+    <h2 class="sec-title">My Active Work</h2>
+    <div class="proj-grid">
+
+      <!-- AI-CARE wide -->
+      <article class="proj proj--wide fi" data-c="teal">
+        <div class="proj-inner">
+          <div>
+            <div class="proj-head">
+              <div class="proj-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <div class="badges">
+                <span class="badge">AI Evaluation</span>
+                <span class="badge badge--rx">arXiv:2602.16042</span>
+                <span class="badge badge--pt">Patent Pending</span>
+              </div>
+            </div>
+            <h3 class="proj-name">AI-CARE</h3>
+            <p class="proj-sub">Carbon-Aware Reporting Evaluation for ML Models</p>
+            <p class="proj-desc">A reporting-centric evaluation framework I developed that elevates energy and carbon emissions to first-class evaluation quantities. Enables transparent, reproducible comparison of ML models under fixed experimental conditions &mdash; without modifying architectures.</p>
+            <p class="kf-label">Key Contributions</p>
+            <ul class="kf-list">
+              <li class="kf"><span class="kf-dot" aria-hidden="true"></span>Carbon&ndash;Accuracy Tradeoff Curves (CATC) for visual benchmarking</li>
+              <li class="kf"><span class="kf-dot" aria-hidden="true"></span>Scalar Carbon-Aware Score (SCAS) for single-metric model ranking</li>
+              <li class="kf"><span class="kf-dot" aria-hidden="true"></span>Benchmarks MLP, CNN, Transformer, MLP-Mixer, MobileNetV2, ResNet-18</li>
+              <li class="kf"><span class="kf-dot" aria-hidden="true"></span>Reproducible CSV outputs + publication-quality figures</li>
+            </ul>
+            <div class="pills"><span class="pill">Python</span><span class="pill">PyTorch</span><span class="pill">CodeCarbon</span><span class="pill">Matplotlib</span><span class="pill">Apache 2.0</span></div>
+            <div class="divider"></div>
+            <div class="btn-row">
+              <a href="https://github.com/USD-AI-ResearchLab/ai-care" target="_blank" rel="noopener noreferrer" class="btn btn--p">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub
+              </a>
+              <a href="https://arxiv.org/abs/2602.16042" target="_blank" rel="noopener noreferrer" class="btn btn--rx">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Read Paper
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="metrics">
+              <div class="metric"><div class="metric-v">6</div><div class="metric-l">Architectures</div></div>
+              <div class="metric"><div class="metric-v">5</div><div class="metric-l">Datasets</div></div>
+              <div class="metric"><div class="metric-v">SCAS</div><div class="metric-l">Novel Metric</div></div>
+              <div class="metric"><div class="metric-v">CATC</div><div class="metric-l">Tradeoff Curves</div></div>
+            </div>
+            <div class="setup-box">
+              <p class="kf-label" style="margin-bottom:var(--sp3)">Experimental Setup</p>
+              <ul class="kf-list">
+                <li class="kf"><span class="kf-dot" aria-hidden="true"></span>Adam &middot; LR 1e-3 &middot; Batch 64 &middot; 10 epochs</li>
+                <li class="kf"><span class="kf-dot" aria-hidden="true"></span>Grid carbon intensity: 400 gCO&#8322;/kWh (fixed)</li>
+                <li class="kf"><span class="kf-dot" aria-hidden="true"></span>CPU-only &middot; Deterministic &middot; Reproducible</li>
+                <li class="kf"><span class="kf-dot" aria-hidden="true"></span>MNIST &rarr; Fashion-MNIST &rarr; CIFAR-10 &rarr; CIFAR-100 &rarr; ImageNet-100</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- AI-CARE LLM -->
+      <article class="proj fi" data-c="blue">
+        <div class="proj-head">
+          <div class="proj-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <div class="badges"><span class="badge">LLM Research</span><span class="badge badge--rx">arXiv:2602.16042</span></div>
+        </div>
+        <h3 class="proj-name">AI-CARE LLM</h3>
+        <p class="proj-sub">Token vs Energy Billing Mismatch</p>
+        <p class="proj-desc">Extends my AI-CARE framework with a pipeline studying the mismatch between token-based LLM pricing and real energy footprint. Uses real NRP-hosted models with a fixed 30-prompt suite for controlled comparison.</p>
+        <p class="kf-label">Highlights</p>
+        <ul class="kf-list">
+          <li class="kf"><span class="kf-dot" aria-hidden="true"></span>Token&ndash;energy correlation, variance &amp; rank-shift analysis</li>
+          <li class="kf"><span class="kf-dot" aria-hidden="true"></span>4 NRP models: Qwen3-small, GPT-OSS, Qwen3, MiniMax-M2</li>
+          <li class="kf"><span class="kf-dot" aria-hidden="true"></span>TikZ/PGFPlots figures for manuscript-ready output</li>
+        </ul>
+        <div class="pills"><span class="pill">Python</span><span class="pill">NRP Nautilus</span><span class="pill">OpenAI API</span><span class="pill">TikZ</span></div>
+        <div class="divider"></div>
+        <div class="btn-row">
+          <a href="https://github.com/USD-AI-ResearchLab/ai-care-llm" target="_blank" rel="noopener noreferrer" class="btn btn--p">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub
+          </a>
+          <a href="https://arxiv.org/abs/2602.16042" target="_blank" rel="noopener noreferrer" class="btn btn--rx">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Paper
+          </a>
+        </div>
+      </article>
+
+      <!-- RAR -->
+      <article class="proj fi" data-c="purple">
+        <div class="proj-head">
+          <div class="proj-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+          <div class="badges"><span class="badge">LLM Agents</span><span class="badge">NeurIPS Extension</span></div>
+        </div>
+        <h3 class="proj-name">Retrieval-Augmented Reflexion</h3>
+        <p class="proj-sub">RAR &mdash; Verbal RL with Episodic Memory</p>
+        <p class="proj-desc">My extension of the Reflexion framework using Maximum Marginal Relevance (MMR) to retrieve semantically similar past trajectories from an episodic store as contrastive context for richer, failure-aware agent reflections.</p>
+        <p class="kf-label">Evaluated Strategies</p>
+        <ul class="kf-list">
+          <li class="kf"><span class="kf-dot" aria-hidden="true"></span>Baselines: Simple, ReAct, CoT+GT, Reflexion, ExpeL</li>
+          <li class="kf"><span class="kf-dot" aria-hidden="true"></span><strong>RAR (mine)</strong>: semantic sim + error-class + MMR diversification</li>
+          <li class="kf"><span class="kf-dot" aria-hidden="true"></span>HotPotQA (100&times;5), ALFWorld (134&times;10), HumanEval Hard (50)</li>
+        </ul>
+        <div class="pills"><span class="pill">Python</span><span class="pill">Kubernetes</span><span class="pill">FAISS/MMR</span><span class="pill">NRP Nautilus</span></div>
+        <div class="divider"></div>
+        <div class="btn-row">
+          <a href="https://github.com/USD-AI-ResearchLab/reflexion" target="_blank" rel="noopener noreferrer" class="btn btn--p">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub
+          </a>
+          <a href="https://github.com/USD-AI-ResearchLab/reflexion" target="_blank" rel="noopener noreferrer" class="btn btn--g">README</a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- PAPER CALLOUT -->
+    <div class="paper-box fi">
+      <p class="paper-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>arXiv Preprint &middot; cs.LG &middot; Accepted IEEE CAI 2026</p>
+      <h3 class="paper-title">AI-CARE: Carbon-Aware Reporting Evaluation Metric for AI Models</h3>
+      <p class="paper-authors">KC Santosh &middot; <strong>Srikanth Baride</strong> &middot; Rodrigue Rizk &mdash; 2026 &middot; arXiv:2602.16042</p>
+      <div class="btn-row">
+        <a href="https://arxiv.org/abs/2602.16042" target="_blank" rel="noopener noreferrer" class="btn btn--p" style="--ca:var(--color-primary)">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Read on arXiv
+        </a>
+        <a href="https://arxiv.org/pdf/2602.16042" target="_blank" rel="noopener noreferrer" class="btn btn--g">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download PDF
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <p class="sec-label">About Me</p>
+    <h2 class="sec-title">Background &amp; Interests</h2>
+    <div class="about-grid">
+      <div class="about-card fi">
+        <p class="acard-label">Biography</p>
+        <h3 class="acard-title">Who I Am</h3>
+        <p class="acard-body">I am a Postdoctoral Researcher at the University of South Dakota (2025&ndash;present), and former Visiting Assistant Professor at USD (2024&ndash;2025). I earned my Ph.D. in Computer Science &amp; Engineering from IIIT-Delhi in 2024 (CGPA 8.11), M.Tech. from NIT Hamirpur, and B.Tech. from JNTU Hyderabad.<br><br>Before academia, I worked as a Digital Innovation Engineer at Buckman (2023&ndash;2024) and a System Engineer at Infosys (2013&ndash;2014). I co-authored <em>Reinforcement Learning Explained</em> (CRC Press | Taylor &amp; Francis, 2025, ISBN: 9781041252993) and hold an Invention Disclosure for AI-CARE with USD&apos;s Technology Transfer Office.</p>
+      </div>
+      <div class="about-card fi">
+        <p class="acard-label">Research Interests</p>
+        <h3 class="acard-title">What I Work On</h3>
+        <ul class="ri-list">
+          <li class="ri"><span class="ri-dot" aria-hidden="true"></span>Applied Machine Learning &amp; AI &mdash; carbon-aware &amp; sustainable evaluation</li>
+          <li class="ri"><span class="ri-dot" aria-hidden="true"></span>Reinforcement Learning &mdash; verbal RL, language agents, world models</li>
+          <li class="ri"><span class="ri-dot" aria-hidden="true"></span>LLM evaluation &mdash; billing transparency &amp; energy-cost modeling</li>
+          <li class="ri"><span class="ri-dot" aria-hidden="true"></span>Graph-Based Learning &amp; large-scale data mining</li>
+          <li class="ri"><span class="ri-dot" aria-hidden="true"></span>Scalable &amp; distributed AI systems (HPC, cloud)</li>
+          <li class="ri"><span class="ri-dot" aria-hidden="true"></span>Trustworthy &amp; responsible AI</li>
+        </ul>
+        <p class="acard-label" style="margin-top:var(--sp5)">Technical Stack</p>
+        <div class="service-row">
+          <span class="s-pill">Python</span><span class="s-pill">PyTorch</span><span class="s-pill">TensorFlow</span><span class="s-pill">JAX</span><span class="s-pill">scikit-learn</span><span class="s-pill">C/C++</span><span class="s-pill">Java</span><span class="s-pill">HPC</span><span class="s-pill">AWS/GCP</span><span class="s-pill">Kubernetes</span>
+        </div>
+      </div>
+      <div class="about-card fi">
+        <p class="acard-label">Awards &amp; Fellowships</p>
+        <h3 class="acard-title">Recognition</h3>
+        <ul class="ri-list">
+          <li class="ri"><span class="ri-dot" aria-hidden="true"></span><strong>Visvesvaraya Ph.D. Fellowship</strong> (2016&ndash;2020), Government of India</li>
+          <li class="ri"><span class="ri-dot" aria-hidden="true"></span><strong>MHRD Scholarship</strong>, Government of India (2010&ndash;2012) for M.Tech.</li>
+          <li class="ri"><span class="ri-dot" aria-hidden="true"></span>Best Project Award, National Children&apos;s Science Congress (2003)</li>
+          <li class="ri"><span class="ri-dot" aria-hidden="true"></span><strong>Founder &amp; Leader</strong>, Student Wellness &amp; Meditation Club, IIIT-Delhi (2016&ndash;2020)</li>
+          <li class="ri"><span class="ri-dot" aria-hidden="true"></span>Art of Living Foundation (2012&ndash;Present): organized 100+ wellness and meditation programs</li>
+        </ul>
+      </div>
+      <div class="about-card fi">
+        <p class="acard-label">Professional Service</p>
+        <h3 class="acard-title">Community Roles</h3>
+        <ul class="ri-list">
+          <li class="ri"><span class="ri-dot" aria-hidden="true"></span>Reviewer, IEEE Conference on Artificial Intelligence (CAI 2026)</li>
+          <li class="ri"><span class="ri-dot" aria-hidden="true"></span>PC Member, 4th Int&rsquo;l Conference on AI &amp; Smart Data Science (AISDS 2025)</li>
+          <li class="ri"><span class="ri-dot" aria-hidden="true"></span>Reviewer, GeoInformatica (Springer), 2025</li>
+          <li class="ri"><span class="ri-dot" aria-hidden="true"></span>TPC Member, 7th AI Symposium (June 2025)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEACHING -->
+<section class="sec" id="teaching">
+  <div class="wrap">
+    <p class="sec-label">Teaching</p>
+    <h2 class="sec-title">Courses I&rsquo;ve Taught</h2>
+    <div class="teach-grid">
+
+      <div class="teach-card fi">
+        <div class="teach-inst">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          University of South Dakota
+        </div>
+        <p class="teach-role">Instructor of Record</p>
+        <ul class="course-list">
+          <li class="course"><div class="c-code">CSC 752</div><div><div class="c-name">Computer Vision</div><div class="c-meta">Graduate &middot; Spring 2026</div></div></li>
+          <li class="course"><div class="c-code">CSC 792</div><div><div class="c-name">Topics in Advanced Data Mining</div><div class="c-meta">Graduate &middot; Summer 2025</div><div class="c-desc">Cutting-edge pattern discovery in large, complex datasets. Advanced algorithms for pattern mining, high-dimensional analysis, and scalable data pipelines.</div></div></li>
+          <li class="course"><div class="c-code">CSC 547</div><div><div class="c-name">Artificial Intelligence</div><div class="c-meta">Graduate &middot; Spring 2025</div><div class="c-desc">Foundational AI concepts: knowledge representation, search algorithms, logical inference, and AI programming. Covers planning, reasoning, and applications.</div></div></li>
+          <li class="course"><div class="c-code">CSC 724</div><div><div class="c-name">Applied Reinforcement Learning</div><div class="c-meta">Graduate &middot; Spring 2025 &middot; 3 sections (U15, U17, U19)</div><div class="c-desc">Leverages RL algorithms for sequential decision-making problems. Covers policy gradients, Q-learning, and real-world applications using open frameworks.</div></div></li>
+        </ul>
+        <p class="teach-role">Co-Instructor</p>
+        <ul class="course-list">
+          <li class="course"><div class="c-code">CSC 785</div><div><div class="c-name">Information Storage &amp; Retrieval</div><div class="c-meta">Graduate &middot; Fall 2025</div></div></li>
+          <li class="course"><div class="c-code">CSC 787</div><div><div class="c-name">AI in Medical Imaging Informatics</div><div class="c-meta">Graduate &middot; Summer 2025</div></div></li>
+        </ul>
+      </div>
+
+      <div class="teach-card fi">
+        <div class="teach-inst">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          IIIT-Delhi
+        </div>
+        <p class="teach-role">Teaching Assistant (2016&ndash;2020)</p>
+        <ul class="course-list">
+          <li class="course"><div class="c-code">CSE 530</div><div><div class="c-name">Distributed Systems</div><div class="c-meta">Graduate &middot; Winter 2016</div></div></li>
+          <li class="course"><div class="c-code">CSE 510A</div><div><div class="c-name">Big Data Analytics</div><div class="c-meta">Graduate &middot; Winter 2017</div></div></li>
+          <li class="course"><div class="c-code">CSE 600A</div><div><div class="c-name">Object Oriented Programming &amp; Design</div><div class="c-meta">Graduate &middot; Monsoon 2020</div></div></li>
+          <li class="course"><div class="c-code">CSE 231</div><div><div class="c-name">Operating Systems</div><div class="c-meta">Undergraduate &middot; Winter 2020</div></div></li>
+          <li class="course"><div class="c-code">CSE 101</div><div><div class="c-name">Introduction to Programming</div><div class="c-meta">Undergraduate &middot; Monsoon 2016, 2017</div></div></li>
+          <li class="course"><div class="c-code">ENG 599s</div><div><div class="c-name">Research Methods</div><div class="c-meta">Graduate &middot; Winter 2019</div></div></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="sec" id="publications">
+  <div class="wrap">
+    <p class="sec-label">Publications</p>
+    <h2 class="sec-title">My Work in Print</h2>
+    <div class="pub-list">
+
+      <div class="pub pub--book fi">
+        <div class="pub-type">Book</div>
+        <div>
+          <div class="pub-title">Reinforcement Learning Explained</div>
+          <div class="pub-by">Baride, S., Rizk, R., &amp; Santosh, KC (2025)</div>
+          <div class="pub-venue">CRC Press | Taylor &amp; Francis &middot; ISBN: 9781041252993</div>
+        </div>
+      </div>
+
+      <div class="pub fi">
+        <div class="pub-type">arXiv</div>
+        <div>
+          <div class="pub-title">AI-CARE: Carbon-Aware Reporting Evaluation Metric for AI Models</div>
+          <div class="pub-by">Santosh, KC, Baride, S., &amp; Rizk, R. (2026)</div>
+          <div class="pub-venue">arXiv:2602.16042 &middot; Accepted at IEEE CAI 2026</div>
+          <a href="https://arxiv.org/abs/2602.16042" target="_blank" rel="noopener noreferrer" class="pub-doi">arxiv.org/abs/2602.16042 &rarr;</a>
+          <a href="https://scholar.google.com/scholar?q=AI-CARE+Carbon-Aware+Reporting+Evaluation+Metric+AI+Models" target="_blank" rel="noopener noreferrer" class="pub-doi" style="margin-left:var(--sp3)">Google Scholar &rarr;</a>
+        </div>
+      </div>
+
+      <div class="pub fi">
+        <div class="pub-type">Journal</div>
+        <div>
+          <div class="pub-title">Efficiently Mining Colocation Patterns for Range Query</div>
+          <div class="pub-by">Baride, S., Saxena, A.S., &amp; Goyal, V. (2023)</div>
+          <div class="pub-venue">Big Data Research, 31, 100369</div>
+          <a href="https://doi.org/10.1016/j.bdr.2023.100369" target="_blank" rel="noopener noreferrer" class="pub-doi">DOI: 10.1016/j.bdr.2023.100369 &rarr;</a>
+          <a href="https://scholar.google.com/scholar?q=Efficiently+Mining+Colocation+Patterns+Range+Query+Baride" target="_blank" rel="noopener noreferrer" class="pub-doi" style="margin-left:var(--sp3)">Google Scholar &rarr;</a>
+        </div>
+      </div>
+
+      <div class="pub fi">
+        <div class="pub-type">IEEE</div>
+        <div>
+          <div class="pub-title">Distributed Algorithm for High-Utility Subgraph Pattern Mining Over Big Data Platforms</div>
+          <div class="pub-by">Khare, A., Goyal, V., Baride, S., et al. (2017)</div>
+          <div class="pub-venue">IEEE HiPC 2017, pp. 263&ndash;272</div>
+          <a href="https://doi.org/10.1109/HiPC.2017.00038" target="_blank" rel="noopener noreferrer" class="pub-doi">DOI: 10.1109/HiPC.2017.00038 &rarr;</a>
+          <a href="https://scholar.google.com/scholar?q=High-Utility+Subgraph+Pattern+Mining+Baride" target="_blank" rel="noopener noreferrer" class="pub-doi" style="margin-left:var(--sp3)">Google Scholar &rarr;</a>
+        </div>
+      </div>
+
+      <div class="pub fi">
+        <div class="pub-type">IEEE</div>
+        <div>
+          <div class="pub-title">A Density-Based Algorithm for Detecting Anomalous Trajectories</div>
+          <div class="pub-by">Barnwal, R.P., Baride, S., Majumder, S., &amp; Ghosh, S.K. (2016)</div>
+          <div class="pub-venue">MicroCom 2016</div>
+          <a href="https://doi.org/10.1109/MicroCom.2016.7522433" target="_blank" rel="noopener noreferrer" class="pub-doi">DOI: 10.1109/MicroCom.2016.7522433 &rarr;</a>
+          <a href="https://scholar.google.com/scholar?q=Density-Based+Anomalous+Trajectories+Baride" target="_blank" rel="noopener noreferrer" class="pub-doi" style="margin-left:var(--sp3)">Google Scholar &rarr;</a>
+        </div>
+      </div>
+
+      <div class="pub fi">
+        <div class="pub-type">ACM</div>
+        <div>
+          <div class="pub-title">A Cloud-Based Software Testing Paradigm for Mobile Applications</div>
+          <div class="pub-by">Baride, S., &amp; Dutta, K. (2011)</div>
+          <div class="pub-venue">ACM SIGSOFT, 36(3):1&ndash;4</div>
+          <a href="https://doi.org/10.1145/1968587.1968601" target="_blank" rel="noopener noreferrer" class="pub-doi">DOI: 10.1145/1968587.1968601 &rarr;</a>
+          <a href="https://scholar.google.com/scholar?q=Cloud-Based+Software+Testing+Mobile+Applications+Baride" target="_blank" rel="noopener noreferrer" class="pub-doi" style="margin-left:var(--sp3)">Google Scholar &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-inner">
+      <span>&copy; 2026 Dr. Srikanth Baride &middot; Postdoctoral Researcher, USD &middot; Vermillion, SD</span>
+      <div class="foot-links">
+        <a href="mailto:srikanth.baride@usd.edu" class="foot-a">srikanth.baride@usd.edu</a>
+        <a href="https://github.com/USD-AI-ResearchLab" target="_blank" rel="noopener noreferrer" class="foot-a">GitHub</a>
+        <a href="https://arxiv.org/abs/2602.16042" target="_blank" rel="noopener noreferrer" class="foot-a">arXiv</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  var d=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+  r.setAttribute('data-theme',d);
+  function upd(th){if(!t)return;t.setAttribute('aria-label','Switch to '+(th==='dark'?'light':'dark')+' mode');t.innerHTML=th==='dark'?'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>':'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';}
+  upd(d);
+  if(t){t.addEventListener('click',function(){d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);upd(d);});}
+  // smooth nav highlight
+  var links=document.querySelectorAll('.nav-link');
+  var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.style.color='';l.style.background='';});var a=document.querySelector('.nav-link[href="#'+e.target.id+'"]');if(a){a.style.color='var(--color-primary)';}};});},{rootMargin:'-40% 0px -55%'});
+  document.querySelectorAll('section[id]').forEach(function(s){obs.observe(s);});
+})();
+</script>
+</body>
+</html>
